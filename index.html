@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Studio za masažu</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+</head>
+<body>
+    <section id="banner">
+        <img src="slike/logo.jpg" class="logo">
+        <div class="banner-text">
+            <h1>Masaža</h1>
+            <p>Sve počinje dodirom</p>
+            <div class="banner-btn">
+                <a href="#"><span></span> O nama </a>
+                <a href="#"><span></span> Nauči više</a>
+            </div>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#"> Početna</a></li>
+                <li><a href="#"> O nama</a></li>
+                <li><a href="#"> Usluge </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="slike/menu.jpg" id="menu" >
+    </div>
+    <section id="feature">
+        <div class="title-text">
+            <p>O nama</p>
+            <h1>Detaljnije</h1>
+        </div>
+        <div class="future-box">
+           <div class="features">
+               <h1>Iskustva</h1>
+           </div>
+            <div class="Features-img">
+                <img src="slike/slika1.jpg" >
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+
+        var menu = document.getElementById("menu")
+
+        menuBtn.onclick = function (){
+            if (sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+
+            }
+            else {
+                sideNav.style.right = "-250px";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
